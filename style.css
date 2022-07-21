@@ -1,0 +1,940 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/111.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 250px;
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;    
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+    
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+
+
+/*-------------------------------------------- Sports -----------------------------------------*/ 
+
+.Sports{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-bottom: auto;
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.Sports-col{
+    float: left;
+    flex-basis: 33.33%;
+    background: #fadada;
+    border-radius: 10px;
+    margin-bottom: auto;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-left: 5px;
+    
+}
+h3{
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.Sports-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.753);  
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction:column;
+    }
+}
+
+
+
+
+
+/*------------------------------------------- Shop -------------------------------------------*/
+.Shop{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.shop-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.shop-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    transition: 0.5s;
+}
+.layer:hover{
+   background: rgba(226,0,0,0.7); 
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+
+    
+/*-----------------------------------------------facilities------------------------------------*/
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+}
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col p{
+    padding: 0;
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*--------------------------------------------call to action------------------------------------*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/cta.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+    
+}
+
+ /*-------------------------------------------- Footer --------------------------------------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+    
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*----------------------------------------- about us page ---------------------------------------*/
+
+.sub-header-about{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/co-p.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+        
+}
+.sub-header-about h1{
+    margin-top: 20px;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img{
+    width: 100%;
+    
+}
+
+.about-col h1{
+    font-weight: 500;
+    padding-top: 0;
+    color: #555;
+    
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+
+.red-btn:hover{
+    color: #fff;    
+}
+
+/*--------------------------------------------- contact us page -------------------------------*/
+
+.sub-header-contact{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/co-p.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+        
+}
+.sub-header-contact h1{
+    margin-top: 20px;
+}
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+    
+}
+.location iframe{
+    width: 100%;
+    
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.contact-col h2{
+    color: #3f3f3f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----------------------------------------sport page---------------------------------------------*/
+
+.sub-header-sport{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/co-p.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+        
+}
+.sub-header-sport h1{
+    margin-top: 20px;
+}
+
+
+
+
+/*----------------------------------------shop page---------------------------------------------*/
+.sub-header-shop{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/co-p.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+        
+}
+.sub-header-shop h1{
+    margin-top: 20px;
+}
+
+/*--------------------------------------------available sport_page--------------------------------*/
+
+
+.sport-con{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.sport-con h2{
+    color: #777;
+    padding: 0;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 55px 
+}
+
+.sport-row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sport-col-3{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sport-col-3 img{
+    width: 100%;
+    display: block;   
+}
+.s_layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: 0.5s;
+}
+.s_layer:hover{
+    background: rgba(0, 0, 0, 0.596);
+}
+
+.s_layer h4{
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.s_layer:hover h4{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+
+/*-------------------buy to something-----------------*/
+
+
+.bts{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/co-p.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    
+}
+.bts h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+    
+}
+
+
+/*--------------------------------------------sport_sports--------------------------------*/
+
+.i_sport{
+    background-color: rgb(255, 255, 255);
+}
+.individual_sport{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.i_sport-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.i_sport-col img{
+    width: 100%;
+    
+}
+
+.i_sport-col h1{
+    font-weight: 500;
+    padding-top: 0;
+    color: rgb(71, 71, 71);
+    
+}
+.i_sport-col p{
+    padding: 15px 0 25px;
+    color: rgb(71, 71, 71);
+}
+
+
+
+/*--------------------------------------------sport_training--------------------------------*/
+.training-section h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.training{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+
+.card{
+    margin: 5px;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    padding: 30px 40px;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+} 
+.card:hover{
+    height:300px;
+}
+.imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-80px);
+    z-index: 99;
+}
+
+.imgbox img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.content{
+    padding: 10px 20px;
+    text-align: center;
+    transform: translateY(-280px);
+    opacity: 0;
+    transition: 0.3s;
+}
+.card:hover > .content{
+    opacity: 1;
+    transform: translateY(-180px);
+}
+.content h3{
+    color: darkgrey;
+} 
+
+
+
+
+
+/*--------------------------------------------sport_match--------------------------------*/
+.match-section{
+    background-color: #000000;
+}
+.match{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.match h1{
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 800;
+    color: white;
+}
+.slide-row{
+    display: flex;
+    width: 5000px;
+    transition: 0.5s;
+}
+.slide-col{
+    width: 1250px;
+    height: 400px;
+    position: relative;
+}
+.match-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 750px;
+}
+.match-img img{
+    border-radius: 10px;
+    height: 100%;
+    
+}
+.match-text-cricket,.match-text-netball, .match-text-basketball, .match-text-main{
+    width: 520px;
+    height: 270px;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: #d3d4d6;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.match-text-netball{
+    background: rgb(80, 14, 14);
+}
+.match-text-cricket{
+    background: #2d3a59;
+}
+.match-text-basketball{
+    background: white;
+}
+.match-text-main{
+    background: rgb(24, 61, 44);
+}
+.match-text-cricket,.match-text-netball, .match-text-basketball, .match-text-main p{
+    font-size: 18px;
+    line-height: 24px;
+}
+.matchcontainer{
+
+    width: 1240px;
+    height: 400px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.indicator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100px
+}
+.btn{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.06s;
+}
+.active{
+    width: 45px;
+}
+.Champions{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*-----------Alternative sports------------*/
+.Alternative_sports{
+    background-color: #b5c0e2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.Alternative_sports h2{
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.A_S{
+    flex-basis: 25%;
+    text-align:center;
+    padding-top: 30px;
+}
+.sport-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.sport-btn:hover{
+    border: 1px solid #3a3837;
+    background: #494747;
+    transition: 1s;
+}   
+.black-btn{
+    border: 1px solid #3f3f3f;
+    background: transparent;
+    color: #3d3433;
+}
+
+.black-btn:hover{
+    color: #fff;    
+}
+
+.Alternative_sports p{
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 20px;
+    color: #000000;
+}
+
+
+/*--------------------------------------------shop_goods--------------------------------*/
+
+.smal-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.shop-row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    border: 1px solid #CFCFCF;
+ 
+ 
+}
+.col-4 img{
+    width: 100%;
+   
+    
+}
+.shop-titel{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #000000;
+}
+.shop-titel::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.shop-sub-titel{
+    text-align: left;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #000000;
+}
+.shop-sub-titel::after{
+    content: '';
+    background: #ff523b;
+    width: 50px;
+    height: 4px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-150%);
+}    
+.col-4 h4{
+    color: #555;
+    font-weight: normal;
+    border-top: 0.1px solid #555;
+    
+}
+.col-4 p{
+    font-size: 14px;
+    
+}
+.rating .fa{
+    color: #ff523b;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+.shop_page-btn{
+    margin: 0 auto 80px;
+    
+}
+
+.shop_page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.shop_page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+}
+
+
+/*-----buy to something---*/
+
+.bsip{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/co-p.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    
+}
+.bsip h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+    
+}
+
+.bsip h2{
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    padding: 0;
+    
+}
+
+

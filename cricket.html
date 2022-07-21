@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <mata name="viewport" content="with=device-width, initial-scale=1.0">
+    
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.gststic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>EMS Sports Academy</title>                                                                                                                  
+</head>
+<body>
+    <section class="sub-header-sport">
+        <nav>
+            <a href="index.html"><img src="images/EMS_sports_white-01.png"></a>
+            <div class="nav-links" id="navLinks">
+                
+                              <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="sports.html">SPORTS</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+                                  <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+          <h1>Cricket</h1>                      
+    </section>
+    <section class="i_sport">
+    
+  <!---------------------------------------------------------------------------------------------------->
+  <section class="individual_sport">
+        
+    <div class="row">
+        <div class="i_sport-col">
+            <h1>Cricket Academy</h1>
+            <p><br><br>As a Cricket Academy member you will develop your skills and fitness under coaches who have national and international Cricket experience.
+
+                <br><br>In recent years, our cricket teams have won a league and also made it through to cup semi-finals.
+                
+                <br><br>We run two Hockey teams: men’s, women’s..
+                
+                <br><br>Contact us now if you would like to join the Cricket Academy.</p><br><br>
+                <a href="mailto:EMS_sports@gmail.com" style="text-decoration: none;"> <i class="fa fa-envelope"></i>&nbsp;&nbsp;EMS_sports@gmail.com </a>
+        </div>
+        <div class="about-col">
+             <img src="images/cricket_page.jpg">
+        </div>
+    </div>
+</section>
+<div class="contact-col" style="text-align: center;">
+    <p>If you want to join to EMS Sport Academy, download the application from below.</p>
+    <br>    
+<h2>Download Application: 
+    <button onclick="location.href='Application/Application.pdf';">Download PDF</button></h2> 
+</div>
+
+<section class="Alternative_sports">
+
+    <h2>Alternative sports</h2>
+     <div class="A_S">
+         <a href="rugby.html" class="sport-btn black-btn">Rugby</a>   
+         <a href="football.html" class="sport-btn black-btn">Football</a>   
+         <a href="basketball.html" class="sport-btn black-btn">Basketball</a> 
+         <a href="hockey.html" class="sport-btn black-btn">Hockey</a> 
+         <a href="netball.html" class="sport-btn black-btn">Netball</a> 
+     </div>
+
+     <p>If you'd like to be part of the Academy please contact us.</p>
+
+ </section> 
+
+    
+
+    
+    <!------- Footer ---->
+    
+    <section class="footer">
+        <p>Made with <i class="fa fa-heart-o"></i> by Group Number 01</p>
+    </section>
+
+    
+ <!--------JavaScript for Toggle menu------> 
+    
+    <script>
+       
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";     
+        }
+         function hideMenu(){
+            navLinks.style.right = "-200px";     
+        }
+        
+      </script>
+
+    </section>
+    
+    
+</body>    
+
+</html>
